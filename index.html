@@ -74,21 +74,8 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    .agenda {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .agenda li {
-      display: flex;
-      gap: 16px;
-      padding: 4px 0;
-    }
-    .agenda .time {
-      flex: 0 0 80px;
-      font-weight: 600;
-      color: var(--accent);
-    }
+    section p { margin: 0 0 10px; }
+    section p:last-child { margin-bottom: 0; }
     .note {
       margin: 14px 0 0;
       color: var(--muted);
@@ -134,13 +121,9 @@
     </header>
 
     <section>
-      <h2>Program</h2>
-      <ul class="agenda">
-        <li><span class="time">10:00</span><span>Dveře jsou otevřené celý den</span></li>
-        <li><span class="time">celý den</span><span>Guláš, studený raut a další dobroty</span></li>
-        <li><span class="time">16:00</span><span>Začínáme oficiálně</span></li>
-      </ul>
-      <p class="note">Stav se kdykoli během dne, budeme rádi.</p>
+      <h2>Kdy přijít</h2>
+      <p>Dveře jsou otevřené od 10:00 až do noci, tak se stav, kdy se ti to hodí. Hlavní sraz je kolem&nbsp;16:00.</p>
+      <p>Na jídlo je guláš, studený raut a další dobroty.</p>
     </section>
 
     <section>
@@ -152,7 +135,7 @@
       <h2>Ulož si to do kalendáře</h2>
       <div class="buttons">
         <a class="btn" target="_blank" rel="noopener"
-           href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Se%C5%A1lost%20u%20p%C5%99%C3%ADle%C5%BEitosti%20Tom%C3%A1%C5%A1ov%C3%BDch%2070.%20narozenin&amp;dates=20261127T100000/20261127T230000&amp;ctz=Europe/Prague&amp;location=Pod%20Terebkou%201136%2F11%2C%20Praha%204&amp;details=Dve%C5%99e%20otev%C5%99en%C3%A9%20od%2010%3A00%2C%20ofici%C3%A1ln%C3%AD%20za%C4%8D%C3%A1tek%20v%2016%3A00.">Google Kalendář</a>
+           href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Se%C5%A1lost%20u%20p%C5%99%C3%ADle%C5%BEitosti%20Tom%C3%A1%C5%A1ov%C3%BDch%2070.%20narozenin&amp;dates=20261127T100000/20261127T230000&amp;ctz=Europe/Prague&amp;location=Pod%20Terebkou%201136%2F11%2C%20Praha%204&amp;details=Dve%C5%99e%20otev%C5%99en%C3%A9%20od%2010%3A00%2C%20hlavn%C3%AD%20sraz%20kolem%2016%3A00.">Google Kalendář</a>
         <a class="btn" href="seslost.ics" download>Apple / Outlook (.ics)</a>
       </div>
     </section>
