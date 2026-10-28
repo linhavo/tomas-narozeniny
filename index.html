@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomáš slaví 70</title>
+  <meta name="description" content="Pozvánka na oslavu 70. narozenin Tomáše – pátek 27. listopadu 2026, Pod Terebkou 1136/11, Praha 4.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f3ec;
+      --card: #fffdf9;
+      --text: #2b2723;
+      --muted: #7a7166;
+      --accent: #a8874f;
+      --line: #e4dccd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1a17;
+        --card: #24211d;
+        --text: #efe9df;
+        --muted: #a69c8e;
+        --accent: #c9a96e;
+        --line: #3a352e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 16px;
+      font-variant-numeric: lining-nums;
+      line-height: 1.6;
+    }
+    main {
+      width: 100%;
+      max-width: 560px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 56px 40px;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0;
+      font-size: 13px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 16px 0 8px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(40px, 9vw, 56px);
+      line-height: 1.1;
+    }
+    .age {
+      display: block;
+      font-size: clamp(88px, 22vw, 128px);
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .date {
+      margin: 24px 0 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 24px;
+    }
+    hr {
+      width: 48px;
+      margin: 40px auto;
+      border: 0;
+      border-top: 1px solid var(--accent);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .agenda {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 380px;
+      list-style: none;
+      text-align: left;
+    }
+    .agenda li {
+      display: flex;
+      gap: 20px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .agenda li:last-child { border-bottom: 0; }
+    .agenda .time {
+      flex: 0 0 84px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1.3;
+    }
+    .note {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    address {
+      font-style: normal;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 22px;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid var(--accent);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .04em;
+      transition: background .2s, color .2s;
+    }
+    .btn:hover, .btn:focus-visible {
+      background: var(--accent);
+      color: var(--card);
+    }
+    .closing p { margin: 0 0 8px; }
+    .closing .sign {
+      margin-top: 24px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 24px;
+      font-style: italic;
+    }
+    @media (max-width: 480px) {
+      main { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Pozvánka na oslavu</p>
+    <h1>Tomáš slaví <span class="age">70</span></h1>
+    <p class="date">pátek 27. listopadu 2026</p>
+
+    <hr>
+
+    <section>
+      <h2>Program</h2>
+      <ul class="agenda">
+        <li><span class="time">10:00</span><span>Dveře jsou otevřené celý den</span></li>
+        <li><span class="time">celý den</span><span>Guláš, studený raut a pohoštění</span></li>
+        <li><span class="time">16:00</span><span>Oficiální začátek oslavy</span></li>
+      </ul>
+      <p class="note">Přijďte kdykoli během dne, budeme rádi.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Místo</h2>
+      <address>Pod Terebkou 1136/11<br>Praha 4</address>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Přidat do kalendáře</h2>
+      <div class="buttons">
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Tom%C3%A1%C5%A1%20slav%C3%AD%2070&amp;dates=20261127T100000/20261127T230000&amp;ctz=Europe/Prague&amp;location=Pod%20Terebkou%201136%2F11%2C%20Praha%204&amp;details=Dve%C5%99e%20otev%C5%99en%C3%A9%20od%2010%3A00%2C%20ofici%C3%A1ln%C3%AD%20za%C4%8D%C3%A1tek%20oslavy%20v%2016%3A00.">Google Kalendář</a>
+        <a class="btn" href="oslava.ics" download>Apple / Outlook (.ics)</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="closing">
+      <p>Dárky nejsou potřeba – hlavním darem je vaše účast.</p>
+      <p class="note">Pokud nemůžete dorazit, dejte nám prosím vědět do 25. listopadu.</p>
+      <p class="sign">Těšíme se na vás</p>
+    </section>
+  </main>
+</body>
+</html>
