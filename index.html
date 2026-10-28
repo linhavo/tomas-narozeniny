@@ -7,91 +7,71 @@
   <meta name="description" content="Pozvánka na sešlost u příležitosti Tomášových 70. narozenin – pátek 27. listopadu 2026, Pod Terebkou 1136/11, Praha 4.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f3f2ef;
-      --card: #ffffff;
-      --text: #22262a;
-      --muted: #6c7075;
-      --line: #e7e5e0;
-      --accent: #3d6b5f;
-      --accent-soft: #e8f0ed;
-      --on-accent: #ffffff;
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --line: #dddddd;
+      --accent: #2b4c7e;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #161817;
-        --card: #202322;
-        --text: #eceeed;
-        --muted: #9ea3a1;
-        --line: #33373a;
-        --accent: #8cc2b2;
-        --accent-soft: #27332f;
-        --on-accent: #161817;
+        --bg: #161616;
+        --text: #ededed;
+        --muted: #a3a3a3;
+        --line: #333333;
+        --accent: #8fb0e0;
       }
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 40px 16px;
+      padding: 56px 16px;
       background: var(--bg);
       color: var(--text);
-      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-      font-size: 16px;
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      font-size: 18px;
       line-height: 1.6;
     }
     main {
-      max-width: 540px;
+      max-width: 520px;
       margin: 0 auto;
-      padding: 48px 32px;
-      border-radius: 16px;
-      background: var(--card);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
       text-align: center;
     }
-    .badge {
-      display: inline-grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
-      border: 2px solid var(--accent);
-      border-radius: 50%;
-      color: var(--accent);
-      font-size: 18px;
-      font-weight: 700;
+    .eyebrow {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
     h1 {
-      margin: 20px 0 6px;
-      font-size: clamp(34px, 9vw, 44px);
-      font-weight: 700;
-      line-height: 1.15;
-      letter-spacing: -.02em;
+      margin: 12px 0 8px;
+      font-size: clamp(32px, 8vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
     }
     .lead {
       margin: 0;
-      font-size: 17px;
       color: var(--muted);
     }
     .date {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
+      margin: 20px 0 0;
+      font-size: 20px;
       font-weight: 600;
     }
     section {
-      margin-top: 32px;
-      padding-top: 32px;
+      margin-top: 36px;
+      padding-top: 36px;
       border-top: 1px solid var(--line);
     }
     h2 {
       margin: 0 0 14px;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 600;
-      letter-spacing: .12em;
+      letter-spacing: .15em;
       text-transform: uppercase;
       color: var(--muted);
     }
@@ -101,27 +81,25 @@
       max-width: 360px;
       list-style: none;
       text-align: left;
-      display: grid;
-      gap: 10px;
     }
     .agenda li {
       display: flex;
       gap: 16px;
+      padding: 4px 0;
     }
     .agenda .time {
-      flex: 0 0 76px;
+      flex: 0 0 80px;
       font-weight: 600;
       color: var(--accent);
     }
     .note {
       margin: 14px 0 0;
       color: var(--muted);
-      font-size: 15px;
+      font-size: 16px;
     }
     address {
       font-style: normal;
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 20px;
     }
     .buttons {
       display: flex;
@@ -133,37 +111,30 @@
       display: inline-block;
       padding: 10px 18px;
       border: 1px solid var(--accent);
-      border-radius: 10px;
-      background: var(--accent);
-      color: var(--on-accent);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-      transition: opacity .15s;
-    }
-    .btn.secondary {
-      background: transparent;
       color: var(--accent);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
     }
-    .btn:hover, .btn:focus-visible { opacity: .85; }
+    .btn:hover, .btn:focus-visible {
+      background: var(--accent);
+      color: var(--bg);
+    }
     .closing p { margin: 0; }
     .closing .sign {
       margin-top: 18px;
-      font-size: 19px;
-      font-weight: 700;
-    }
-    @media (max-width: 480px) {
-      main { padding: 40px 20px; }
+      font-size: 20px;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <span class="badge">70</span>
+      <p class="eyebrow">Pozvánka</p>
       <h1>Přijď za námi</h1>
       <p class="lead">na sešlost u příležitosti Tomášových 70.&nbsp;narozenin</p>
-      <span class="date">pátek 27. listopadu 2026</span>
+      <p class="date">Pátek 27. listopadu 2026</p>
     </header>
 
     <section>
@@ -186,7 +157,7 @@
       <div class="buttons">
         <a class="btn" target="_blank" rel="noopener"
            href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Se%C5%A1lost%20u%20p%C5%99%C3%ADle%C5%BEitosti%20Tom%C3%A1%C5%A1ov%C3%BDch%2070.%20narozenin&amp;dates=20261127T100000/20261127T230000&amp;ctz=Europe/Prague&amp;location=Pod%20Terebkou%201136%2F11%2C%20Praha%204&amp;details=Dve%C5%99e%20otev%C5%99en%C3%A9%20od%2010%3A00%2C%20ofici%C3%A1ln%C3%AD%20za%C4%8D%C3%A1tek%20v%2016%3A00.">Google Kalendář</a>
-        <a class="btn secondary" href="seslost.ics" download>Apple / Outlook (.ics)</a>
+        <a class="btn" href="seslost.ics" download>Apple / Outlook (.ics)</a>
       </div>
     </section>
 
